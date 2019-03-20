@@ -31,7 +31,8 @@ bash demo.sh
 将依次执行数据读取，训练line，训练FNN。
 
 其中：
-data_process_fnn_concat.py中包含数据切割和数据读取的代码：
+
+```data_process_fnn_concat.py```中包含数据切割和数据读取的代码：
 
 load_data(path_log, path_pay):        path_log，path_pay分别为登录数据和支付数据路径
 data_filter()：                       
