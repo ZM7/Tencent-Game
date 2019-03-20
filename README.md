@@ -36,8 +36,8 @@ bash demo.sh
 ```load_data(path_log, path_pay):  path_log，path_pay```分别为登录数据和支付数据路径  
 data_filter()：                       
 筛选规则：
-（1）将每天登录时长大于24小时和小于30秒的数据去掉；
-（2）将登录时长或充值金额占所有时长和充值金额前10%的APP为核心APP。
+（1）将每天登录时长大于24小时和小于30秒的数据去掉;  
+（2）将登录时长或充值金额占所有时长和充值金额前10%的APP为核心APP。  
 save_user_item() :                   提出筛选后的user和item的稀疏特征保存
 generate_seq():                      
 1.构建序列line所需的图，生成边和权重，保存在文件weigh.txt中 \
