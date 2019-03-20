@@ -32,9 +32,8 @@ bash demo.sh
 
 其中：
 
-```data_process_fnn_concat.py```中包含数据切割和数据读取的代码：
-
-load_data(path_log, path_pay):        path_log，path_pay分别为登录数据和支付数据路径
+```data_process_fnn_concat.py```中包含数据切割和数据读取的代码：  
+```load_data(path_log, path_pay):  path_log，path_pay```分别为登录数据和支付数据路径  
 data_filter()：                       
 筛选规则：
 （1）将每天登录时长大于24小时和小于30秒的数据去掉；
