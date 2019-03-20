@@ -37,13 +37,14 @@ bash demo.sh
 ```data_filter()```：                       
 筛选规则:  
 * 将每天登录时长大于24小时和小于30秒的数据去掉;  
-* 将登录时长或充值金额占所有时长和充值金额前10%的APP为核心APP。  
+* 将登录时长或充值金额占所有时长和充值金额前10%的APP为核心APP。
+
 ```save_user_item() ```: 提出筛选后的user和item的稀疏特征保存  
 ```generate_seq()```:                        
 * 构建序列line所需的图，生成边和权重，保存在文件weigh.txt中  
 * 给所有APP编号，保存在aliases_dict.pickle中  
-```read_embedding():```                     
-读取line生成的嵌入，保存在```line_embedding```中。  
+```read_embedding():```  读取line生成的嵌入，保存在```line_embedding```中。  
+
 ```fnn_seq()```：      
 * 根据登录数据和支付数据，生成fnn所需要的序列和目标。按照user的8:2进行分割，80%user作为训练，20%user作为测试集；  
 * 序列按照4:1进行滑动切割。每个月的序列单独保存，用于后续月份的拼接。  
