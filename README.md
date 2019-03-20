@@ -8,14 +8,16 @@ data_prepare.py
 
 2.使用line，得到APP的嵌入表达
 line的库可以使用：https://github.com/thunlp/openne
-'''
+
+```
 python -m openne --method  line\
  --input ./Dataset/all_data/weight.txt\                #根据序列得到的图的边和权重文件weight.txt
  --graph-format edgelist \
  --output ./Dataset/all_data/line.txt\                 #将line所学的表达存到line.txt
  --directed --weighted --representation-size=100 --epochs=40>log &&            #各种参数
 
-'''
+
+```
 3.python main.py 
 --baseline       #不加line的嵌入表达
  
