@@ -33,7 +33,8 @@ data_filter()：
 （2）将登录时长或充值金额占所有时长和充值金额前10%的APP为核心APP。
 save_user_item() :                   提出筛选后的user和item的稀疏特征保存
 generate_seq():                      
-1.构建序列line所需的图，生成边和权重，保存在文件weigh.txt中\\
+1.构建序列line所需的图，生成边和权重，保存在文件weigh.txt中 \\
+
 2.给所有APP编号，保存在aliases_dict.pickle中\\
 read_embedding()：                    
 读取line生成的嵌入，保存在line_embedding中
