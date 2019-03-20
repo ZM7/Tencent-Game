@@ -2,9 +2,12 @@
 Core APP recommendation
 
 1.数据准备
+
+```
 data_prepare.py 
---user_item 读取user和item存储
---all_seq   构建序列line所需的图，生成边和权重，保存在文件weigh.txt中；并且给所有APP编号，保存在aliases_dict.pickle中
+--user_item  #读取user和item存储
+--all_seq    #构建序列line所需的图，生成边和权重，保存在文件weigh.txt中；并且给所有APP编号，保存在aliases_dict.pickle中
+```
 
 2.使用line，得到APP的嵌入表达
 line的库可以使用：https://github.com/thunlp/openne
