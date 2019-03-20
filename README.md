@@ -11,23 +11,24 @@ data_prepare.py
 
 2.使用line，得到APP的嵌入表达
 line的库可以使用：https://github.com/thunlp/openne
-
 ```
 python -m openne --method  line\
- --input ./Dataset/all_data/weight.txt\                #根据序列得到的图的边和权重文件weight.txt
+ --input ./Dataset/all_data/weight.txt\                              #根据序列得到的图的边和权重文件weight.txt
  --graph-format edgelist \
- --output ./Dataset/all_data/line.txt\                 #将line所学的表达存到line.txt
- --directed --weighted --representation-size=100 --epochs=40>log &&            #各种参数
-
+ --output ./Dataset/all_data/line.txt\                               #将line所学的表达存到line.txt
+ --directed --weighted --representation-size=100 --epochs=40>log &&  #各种参数
+```
+3.执行Baseline
 
 ```
-3.python main.py 
+python main.py 
 --baseline       #不加line的嵌入表达
- 
-直接运行bash demo.sh
+```
+直接运行
+```
+bash demo.sh
+```
 将依次执行数据读取，训练line，训练FNN。
-
-
 
 其中：
 data_process_fnn_concat.py中包含数据切割和数据读取的代码：
